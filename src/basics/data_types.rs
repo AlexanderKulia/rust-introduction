@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 fn main() {
     // will fail
     let guess: i32 = "42".parse().expect("Not a number!");
@@ -69,4 +71,17 @@ fn main() {
     let a = [1, 2, 3, 4, 5];
     let first = a[0];
     let second = a[1];
+
+    // vectors
+    let v: Vec<i32> = Vec::new();
+    let v2 = vec![1, 2, 3];
+    let third = v2.get(2);
+
+    // hashmaps
+    let mut scores = HashMap::new();
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Yellow"), 50);
+    let team_name = String::from("Blue");
+    let score = scores.get(&team_name).copied().unwrap_or(0);
+    scores.entry(String::from("Yellow")).or_insert(50);
 }

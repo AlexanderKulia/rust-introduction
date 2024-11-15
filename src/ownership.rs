@@ -23,7 +23,7 @@ fn copy_string() {
     // this is called a move
     let s2 = s1;
 
-    println!("{s1}, world!");
+    // println!("{s1}, world!");
 }
 
 fn function_ownership() {
@@ -65,7 +65,7 @@ fn reference_types() {
 
     let r1 = &s; // no problem
     let r2 = &s; // no problem
-    let r3 = &mut s; // BIG PROBLEM
+                 // let r3 = &mut s; // BIG PROBLEM
 
-    println!("{}, {}, and {}", r1, r2, r3);
+    // println!("{}, {}, and {}", r1, r2, r3);
 }

@@ -1,4 +1,4 @@
-mod control_flow;
-mod data_types;
-mod functions;
-mod variables;
+pub mod control_flow;
+pub mod data_types;
+pub mod functions;
+pub mod variables;

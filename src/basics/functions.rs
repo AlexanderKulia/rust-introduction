@@ -17,6 +17,6 @@ fn main() {
     }; // expression
 }
 
-fn multiply_by_two(value: i32) -> i32 {
+pub fn multiply_by_two(value: i32) -> i32 {
     value * 2
 }

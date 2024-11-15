@@ -11,9 +11,9 @@ fn basic_if() {
 fn conditions_must_be_booleans() {
     let number = 3;
 
-    if number {
-        println!("number was three");
-    }
+    // if number {
+    //     println!("number was three");
+    // }
 }
 
 fn else_if() {
