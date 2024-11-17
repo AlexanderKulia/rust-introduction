@@ -18,7 +18,20 @@ mod tests {
             println!("map2 {}", x);
             x * 2
         });
-        let s: u32 = times_two_iter.sum();
+        let less_then_hundred_iter = times_two_iter.filter(|x| {
+            println!("filter {}", x);
+            *x < 100
+        });
+        let s: u32 = less_then_hundred_iter.sum();
         println!("{}", s);
+    }
+
+    #[test]
+    fn reduce_example() {
+        let reduced: i32 = (1..10).reduce(|acc, e| acc + e).unwrap();
+        assert_eq!(reduced, 45);
+
+        let folded: i32 = (1..10).fold(0, |acc, e| acc + e);
+        assert_eq!(folded, 45);
     }
 }
