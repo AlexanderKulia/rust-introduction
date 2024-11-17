@@ -12,6 +12,7 @@
 - [Tests](./src/tests.rs)
 - [Iterators](./src/iterators.rs)
 - [Concurrency](./src/concurrency.rs)
+- Simple Web API with an SQLite database. If enough time, maybe with htmx as well
 
 ## What is Rust
 
