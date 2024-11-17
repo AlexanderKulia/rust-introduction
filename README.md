@@ -55,3 +55,8 @@ fn main() {
 
 - The Rust Programming Language https://doc.rust-lang.org/book/
 - Exercises https://github.com/rust-lang/rustlings
+
+## Community
+
+- Rust Meetup Augsburg https://www.meetup.com/rust-meetup-augsburg/?eventOrigin=event_home_page
+- Rust Munich https://www.meetup.com/rust-munich/?eventOrigin=your_groups
